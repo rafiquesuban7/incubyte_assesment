@@ -95,9 +95,9 @@ pre-commit install
   - Git history showing incremental commits
   - (Optional) GitHub Actions green check
 
+## Project Structure and Key Files
 
-  Project Structure and Key Files
-
+```
   your-repo/
 │
 ├── string_calculator/
@@ -116,4 +116,4 @@ pre-commit install
 ├── README.md
 ├── .gitignore
 └── setup.cfg (optional for linting configs)
-
+```
