@@ -30,3 +30,9 @@ def test_newline_as_delimiter(calc):
 
 def test_custom_single_delimiter(calc):
     assert calc.add("//;\n1;2;3") == 6
+
+
+def test_negative_numbers_raise_with_all_negatives(calc):
+    with pytest.raises(ValueError) as e:
+        calc.add("1,-2,3,-4")
+    assert "negative numbers not allowed: -2, -4" in str(e.value)
