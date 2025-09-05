@@ -1,0 +1,22 @@
+
+[project]
+name = "incubyte-string-calculator"
+version = "0.1.0"
+description = "TDD kata: String Calculator (Incubyte)"
+readme = "README.md"
+requires-python = ">=3.10"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["string_calculator"]
+package-dir = {"" = "src"}
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+pythonpath = ["src"]
