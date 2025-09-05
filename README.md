@@ -94,3 +94,26 @@ pre-commit install
   - `coverage report -m`
   - Git history showing incremental commits
   - (Optional) GitHub Actions green check
+
+
+  Project Structure and Key Files
+
+  your-repo/
+│
+├── string_calculator/
+│   ├── __init__.py
+│   └── string_calculator.py
+│
+├── tests/
+│   ├── __init__.py
+│   └── test_string_calculator.py
+│
+├── .github/
+│   └── workflows/
+│       └── python-tests.yml
+│
+├── pyproject.toml
+├── README.md
+├── .gitignore
+└── setup.cfg (optional for linting configs)
+
